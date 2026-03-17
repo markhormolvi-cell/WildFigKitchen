@@ -381,7 +381,7 @@ body.nav-open {
     justify-content: center;
     text-align: center;
     background-color: #2C2C2C; /* Fallback color while loading */
-    background-image: url('./assets/unnamed.webp');
+    background-image: url('./assets/hero-main.webp.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -673,11 +673,24 @@ body.nav-open {
 
 .menu-category-pane {
     display: none;
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 12px;
-    padding: 3rem 2rem;
-    animation: fadeIn 0.5s ease-out forwards;
+    background: #1a1a1a;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 0; /* Square edges feel more premium for menus */
+    padding: 4rem 3rem;
+    position: relative;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+.menu-category-pane::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    border: 1px solid rgba(194, 94, 53, 0.2); /* Subtle gold/copper border */
+    pointer-events: none;
 }
 
 .menu-category-pane.active {
@@ -696,21 +709,21 @@ body.nav-open {
 }
 
 .menu-category-header h3 {
-    font-size: 1.8rem;
-    color: #ffb400;
+    font-size: 2.2rem;
+    color: var(--clr-primary);
     text-transform: uppercase;
-    letter-spacing: 0.15em;
-    font-weight: 700;
-    margin-bottom: 1rem;
+    letter-spacing: 0.3em;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
 }
 
 .menu-category-header::after {
     content: '';
     display: block;
-    width: 60%;
+    width: 40px;
     height: 1px;
-    background: rgba(255, 255, 255, 0.2);
-    margin: 0.5rem auto 0;
+    background: var(--clr-primary);
+    margin: 1.5rem auto;
 }
 
 .menu-category-header p {
@@ -722,55 +735,66 @@ body.nav-open {
 .menu-table {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 3.5rem;
 }
 
 .menu-item-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: baseline;
-    row-gap: 0.5rem;
-    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: 
+        "name price"
+        "desc desc";
+    gap: 0.25rem 2rem;
+    margin-bottom: 3.5rem;
+    transition: transform 0.3s ease;
+}
+
+.menu-item-row:hover {
+    transform: translateX(8px);
 }
 
 .menu-item-name {
-    font-family: var(--font-body);
-    font-size: 1.2rem;
+    grid-area: name;
+    font-family: var(--font-heading);
+    font-size: 1.45rem;
     font-weight: 500;
     color: #ffffff;
     display: flex;
     align-items: baseline;
-    flex: 1;
-    min-width: 0; /* Prevents overflow/awkward wrapping in flex */
+    min-width: 0;
+    letter-spacing: 0.03em;
 }
 
 .menu-item-name::after {
     content: '';
     flex: 1;
-    border-bottom: 2px dotted rgba(255, 255, 255, 0.1);
-    margin-left: 0.75rem;
-    margin-right: 0.75rem;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
+    margin-left: 1rem;
+    margin-right: 0;
     height: 1px;
-    align-self: center;
+    align-self: baseline;
+    margin-bottom: 4px;
 }
 
 .menu-item-price {
-    font-family: var(--font-body);
-    font-size: 1.25rem;
-    font-weight: 600;
+    grid-area: price;
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 500;
     color: var(--clr-primary);
     white-space: nowrap;
+    text-align: right;
 }
 
 .menu-item-desc {
-    flex-basis: 100%;
+    grid-area: desc;
     font-size: 0.95rem;
     color: rgba(255, 255, 255, 0.5);
-    line-height: 1.5;
+    line-height: 1.6;
     margin-top: 0.25rem;
-    font-style: italic;
-    font-weight: 400;
+    font-style: normal;
+    font-weight: 300;
+    max-width: 90%;
 }
 
 /* =========================================

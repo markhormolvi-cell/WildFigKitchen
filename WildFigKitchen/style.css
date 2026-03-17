@@ -347,7 +347,7 @@ img {
 .mobile-links a {
     font-family: var(--font-heading);
     font-size: 2.5rem;
-    color: var(--clr-secondary);
+    color: white;
 }
 
 /* Mobile Nav Open State */
@@ -1307,6 +1307,10 @@ body.nav-open {
 }
 
 @media (max-width: 768px) {
+    .nav-container {
+        padding: 0 1rem;
+    }
+
     .nav-links {
         display: none;
     }
@@ -1346,6 +1350,15 @@ body.nav-open {
 
     .section {
         padding: 5rem 0;
+    }
+
+    .menu-category-header h3 {
+        font-size: 1.5rem;
+        letter-spacing: 0.15em;
+    }
+
+    .menu-category-pane {
+        padding: 3rem 1.5rem;
     }
 
     .menu-item-row {

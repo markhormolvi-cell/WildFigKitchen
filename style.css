@@ -361,12 +361,12 @@ body.nav-open {
 
 .hamburger.active .bar:nth-child(1) {
     transform: translateY(7px) rotate(45deg);
-    background-color: var(--clr-secondary);
+    background-color: white;
 }
 
 .hamburger.active .bar:nth-child(3) {
     transform: translateY(-7px) rotate(-45deg);
-    background-color: var(--clr-secondary);
+    background-color: white;
 }
 
 /* =========================================

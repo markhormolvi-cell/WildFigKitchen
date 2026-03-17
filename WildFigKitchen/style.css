@@ -381,7 +381,7 @@ body.nav-open {
     justify-content: center;
     text-align: center;
     background-color: #2C2C2C; /* Fallback color while loading */
-    background-image: url('./assets/hero-bg.webp');
+    background-image: url('./assets/unnamed.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

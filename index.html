@@ -14,7 +14,8 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/brand/logo.png">
+    <link rel="icon" type="image/png" href="./assets/brand/logo.png">
+    <link rel="preload" as="image" href="./assets/brand/logo.png">
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -30,7 +31,7 @@
             </ul>
 
             <a href="#home" class="logo">
-                <img src="assets/brand/logo.png" alt="Wild Fig Kitchen Logo" class="brand-logo">
+                <img src="./assets/brand/logo.png" alt="Wild Fig Kitchen Logo" class="brand-logo">
             </a>
 
             <ul class="nav-links right-links">
@@ -93,11 +94,11 @@
             <div class="story-image-column fade-in">
                 <div class="image-slider-wrapper">
                     <div class="image-slider">
-                        <img src="./assets/exterior.jpg" alt="Wild Fig Kitchen Exterior" class="slide-img">
-                        <img src="./assets/owner.jpg" alt="Wild Fig Kitchen Welcome" class="slide-img">
+                        <img src="./assets/exterior.jpg" alt="Wild Fig Kitchen Exterior" class="slide-img" loading="lazy">
+                        <img src="./assets/owner.jpg" alt="Wild Fig Kitchen Welcome" class="slide-img" loading="lazy">
                         <img src="./assets/menu/monte-cristo.jpg" alt="Signature Monte Cristo Sandwich"
-                            class="slide-img">
-                        <img src="./assets/menu/wild-fig-salad.jpg" alt="Wild Fig Fresh Salad" class="slide-img">
+                            class="slide-img" loading="lazy">
+                        <img src="./assets/menu/wild-fig-salad.jpg" alt="Wild Fig Fresh Salad" class="slide-img" loading="lazy">
                     </div>
 
                     <div class="leaf-decor">
@@ -584,7 +585,7 @@
     <footer class="footer">
         <div class="container footer-grid">
             <div class="footer-brand">
-                <img src="assets/brand/logo.png" alt="Wild Fig Kitchen Logo" class="footer-logo">
+                <img src="./assets/brand/logo.png" alt="Wild Fig Kitchen Logo" class="footer-logo" loading="lazy">
                 <p>Premium dining experience blending rustic charm with modern culinary innovation.</p>
             </div>
 

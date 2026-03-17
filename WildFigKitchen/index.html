@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wild Fig Kitchen | Premium Dining Experience</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/brand/logo.png">
+    <link rel="preload" as="image" href="./assets/brand/logo.png">
+    <link rel="preload" as="image" href="./assets/hero-bg.webp">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <ul class="nav-links left-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#restaurant">Restaurant</a></li>
+            </ul>
+
+            <a href="#home" class="logo">
+                <img src="./assets/brand/logo.png" alt="Wild Fig Kitchen Logo" class="brand-logo">
+            </a>
+
+            <ul class="nav-links right-links">
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+        <!-- Mobile Navigation pane -->
+        <div class="mobile-nav" id="mobile-nav">
+            <ul class="mobile-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#restaurant">Restaurant</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <!-- Background image is set in CSS -->
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title animate-on-load">It's Kind of A <br> <span class="text-italic">Fig Deal</span></h1>
+            <p class="hero-subtitle animate-on-load delay-1">Memorable meals, carefully sourced ingredients, and refined
+                comfortable dining.</p>
+            <div class="hero-actions animate-on-load delay-2">
+                <a href="#contact" class="btn btn-primary">Book a Table</a>
+                <a href="#menu" class="btn btn-secondary">View Menu</a>
+            </div>
+
+        </div>
+    </header>
+
+
+
+    <!-- Restaurant Story -->
+    <section class="section restaurant-story bg-alt" id="restaurant">
+        <div class="container story-grid">
+            <div class="story-content-column fade-in delay-2">
+                <span class="section-subtitle">Our Story</span>
+                <h2 class="section-title">Welcome to<br> Wild Fig Kitchen</h2>
+                <p>Located in Coarsegold, CA, Wild Fig Kitchen is a family restaurant dedicated to providing fresh food
+                    from the finest available ingredients.</p>
+                <p>Wild Fig Kitchen opened in March 2017 and is located in the Historical Coarsegold Village in
+                    Coarsegold, CA. Since then, chef and owner Marc Neff has been serving fresh and original
+                    interpretations of breakfast and lunch favorites.</p>
+                <p>In the Fall of 1998, Marc and his wife Jacque moved their small family from the beaches of Southern
+                    California to the Foothills of the Sierra Nevada. Since the move, it has long been Marc's dream to
+                    create a mountain restaurant that caters to the hungry traveller, the outdoor enthusiast, Yosemite
+                    Weekender, and mountain folk alike. So, whether you live down the street or are just passing
+                    through, we invite you to join us for breakfast or lunch.</p>
+            </div>
+            <div class="story-image-column fade-in">
+                <div class="image-slider-wrapper">
+                    <div class="image-slider">
+                        <img src="./assets/exterior.webp" alt="Wild Fig Kitchen Exterior" class="slide-img" loading="lazy">
+                        <img src="./assets/owner.webp" alt="Wild Fig Kitchen Welcome" class="slide-img" loading="lazy">
+                        <img src="./assets/menu/monte-cristo.webp" alt="Signature Monte Cristo Sandwich"
+                            class="slide-img" loading="lazy">
+                        <img src="./assets/menu/wild-fig-salad.webp" alt="Wild Fig Fresh Salad" class="slide-img" loading="lazy">
+                    </div>
+
+                    <div class="leaf-decor">
+                        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M50 0C50 0 10 30 10 60C10 76.5 23.5 90 40 90C47.5 90 55 86 60 80C75 100 90 90 90 90C90 90 100 70 80 50C70 40 60 30 50 0Z"
+                                fill="currentColor" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Preview -->
+    <section class="section menu-preview" id="menu">
+        <div class="container">
+            <h2 class="section-title text-center fade-in">Explore the Menu</h2>
+            
+            <div class="menu-tabs fade-in delay-1">
+                <button class="tab-btn active" data-category="breakfast">Breakfast</button>
+                <button class="tab-btn" data-category="salads-soup">Salads & Soup</button>
+                <button class="tab-btn" data-category="entree-sandwiches">Entree Sandwiches</button>
+                <button class="tab-btn" data-category="brunch">Sunday Brunch</button>
+                <button class="tab-btn" data-category="drinks">Drinks</button>
+            </div>
+
+            <div class="menu-table-container fade-in delay-2">
+                
+                <!-- Breakfast Pane -->
+                <div class="menu-category-pane active" id="breakfast">
+                    <div class="menu-category-header">
+                        <h3>Breakfast</h3>
+                        <p>Served all day. Gluten Free Bread Available</p>
+                    </div>
+                    
+                    <div class="menu-table">
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Southern Fried Chicken and Waffles</span>
+                            <span class="menu-item-price">$14</span>
+                            <p class="menu-item-desc">Buttermilk fried chicken breast & Belgian waffle. Served with pure maple syrup & black pepper gravy.</p>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Breakfast Burrito</span>
+                            <span class="menu-item-price">$9</span>
+                            <p class="menu-item-desc">3 eggs, cotija and cheddar cheese, black beans, rice, fresh cilantro, side of fresh salsa. Add bacon, chicken apple sausage, carnitas, black forest ham, or avocado for 2.</p>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Burrito Bowl</span>
+                            <span class="menu-item-price">$9</span>
+                            <p class="menu-item-desc">3 eggs, cotija and cheddar cheese, black beans, rice, fresh cilantro, side of fresh salsa. Add bacon, chicken apple sausage, carnitas, black forest ham, or avocado for 2.</p>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Fresh Basil and Cheese Frittata</span>
+                            <span class="menu-item-price">$10</span>
+                            <p class="menu-item-desc">Swiss and ricotta cheese, served with a side of seasonal fresh fruit and chicken sausage, bacon, or black forest ham.</p>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Biscuits & Chicken Gravy</span>
+                            <span class="menu-item-price">$12</span>
+                            <p class="menu-item-desc">Freshly baked biscuits, shredded chicken, peas, leeks and creamy gravy.</p>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Biscuits & Sausage Gravy</span>
+                            <span class="menu-item-price">$11</span>
+                            <p class="menu-item-desc">Freshly baked biscuits with country pork sausage gravy.</p>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Multi-Grain Pancakes</span>
+                            <span class="menu-item-price">$8</span>
+                            <p class="menu-item-desc">Tall stack (3) of house made multi-grain pancakes, served with pure maple syrup and fresh berries.</p>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Steel-Cut Oatmeal</span>
+                            <span class="menu-item-price">$8</span>
+                            <p class="menu-item-desc">Steel-cut oats with chia and flax seeds, served with brown sugar, seasonal berries, & toasted pecans.</p>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">French Toast</span>
+                            <span class="menu-item-price">$8.75</span>
+                            <p class="menu-item-desc">2 thick slices of Max's Challa dusted with powdered sugar and served with fresh berries and pure maple syrup.</p>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Mexican Scramble</span>
+                            <span class="menu-item-price">$11</span>
+                            <p class="menu-item-desc">3 eggs, fried corn tortilla strips, onions, tomatoes, cheddar & cotija cheeses, served with a side of black beans, fire roasted salsa & tortillas. Add avocado for (2).</p>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">2 Egg Breakfast</span>
+                            <span class="menu-item-price">$10.75</span>
+                            <p class="menu-item-desc">2 eggs prepared to order served with country potatoes, toast & your choice of apple-wood smoked bacon, chicken sausage, black forest ham, or fresh fruit.</p>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Breakfast Sandwich</span>
+                            <span class="menu-item-price">$10.75</span>
+                            <p class="menu-item-desc">2 eggs prepared to order, ham, bacon, or chicken apple sausage, cheddar cheese, choice of toast, and country potatoes on the side.</p>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Sweet Potato Hash</span>
+                            <span class="menu-item-price">$14</span>
+                            <p class="menu-item-desc">Sweet potatoes and beef brisket with 2 poached eggs.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Salads & Soup Pane -->
+                <div class="menu-category-pane" id="salads-soup">
+                    <div class="menu-category-header">
+                        <h3>Salads & Soup</h3>
+                        <p>Freshly prepared daily with the finest ingredients</p>
+                    </div>
+                    
+                    <div class="menu-table">
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Firefall House Salad</span>
+                            <span class="menu-item-price">$10</span>
+                            <p class="menu-item-desc">Spring lettuce mix with caramelized pecans and feta cheese tossed with balsamic vinaigrette.</p>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Wild Fig Salad</span>
+                            <span class="menu-item-price">$13</span>
+                            <p class="menu-item-desc">Arugula, goat cheese, seasonal fresh figs with honey-balsamic vinaigrette.</p>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Chinese Chicken Salad</span>
+                            <span class="menu-item-price">$13</span>
+                            <p class="menu-item-desc">Sesame-crusted chicken breast on a bed of lettuces, cilantro, wontons & sai fun noodles tossed with an Asian soy dressing.</p>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Soup of the Day</span>
+                            <span class="menu-item-price">$4.75 / $6.75</span>
+                            <p class="menu-item-desc">Made fresh daily, 6oz cup or 10oz bowl.</p>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Cup of Soup & 1/2 Sandwich</span>
+                            <span class="menu-item-price">$10.75</span>
+                            <p class="menu-item-desc">Your choice of Turkey Club, Chicken Salad Sandwich, Turkey Pesto, Fresh Veggie Sandwich, Grilled Cheese Caprese.</p>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Cup of Soup & Small House Salad</span>
+                            <span class="menu-item-price">$10.75</span>
+                            <p class="menu-item-desc">Upgrade to Wild Fig Salad (+1).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Entree Sandwiches Pane -->
+                <div class="menu-category-pane" id="entree-sandwiches">
+                    <div class="menu-category-header">
+                        <h3>Entree Sandwiches & More</h3>
+                        <p>Served with Small House Salad, French Fries, or Fresh Seasonal Fruit Salad (+$1)</p>
+                    </div>
+                    
+                    <div class="menu-table">
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Turkey Club</span>
+                            <span class="menu-item-price">$14</span>
+                            <p class="menu-item-desc">Oven-roasted turkey, bacon, sprouts, avocado, and fresh tomatoes on focaccia bread.</p>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Grilled Turkey & Pesto</span>
+                            <span class="menu-item-price">$14</span>
+                            <p class="menu-item-desc">Oven-roasted turkey, basil pesto, tomato, & provolone cheese on ciabatta roll.</p>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Cubano</span>
+                            <span class="menu-item-price">$14.75</span>
+                            <p class="menu-item-desc">Pulled pork, black forest ham, swiss cheese, pickles, and mustard on french roll.</p>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">BBQ Brisket Sandwich</span>
+                            <span class="menu-item-price">$13.75</span>
+                            <p class="menu-item-desc">Beef brisket, BBQ sauce, cheddar cheese, house slaw, house pickles.</p>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Southern Fried Chicken Sandwich</span>
+                            <span class="menu-item-price">$9</span>
+                            <p class="menu-item-desc">Fried Chicken Breast, House Slaw, House Pickles & Chipotle Mayo on a Max’s roll.</p>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Grilled Cheese Caprese</span>
+                            <span class="menu-item-price">$13</span>
+                            <p class="menu-item-desc">Provolone, fresh basil, and roasted tomato on sourdough. Add black forest ham or applewood-smoked bacon for 2.</p>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Grilled Chicken Sandwich</span>
+                            <span class="menu-item-price">$12</span>
+                            <p class="menu-item-desc">Grilled chicken breast, romaine lettuce, tarragon mayo on a croissant.</p>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Classic Chicken Salad Sandwich</span>
+                            <span class="menu-item-price">$12</span>
+                            <p class="menu-item-desc">Fresh tarragon, toasted pecans & celery with lettuce & tomato on whole-wheat bread.</p>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Bacon, Lettuce, & Tomato</span>
+                            <span class="menu-item-price">$14</span>
+                            <p class="menu-item-desc">Applewood-smoked bacon, lettuce & tomato on sourdough. Add avocado 2.</p>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Wild Fig Burger</span>
+                            <span class="menu-item-price">$13</span>
+                            <p class="menu-item-desc">1/3 pound beef patty with arugula, goat cheese, caramelized onions & fig jam. Add applewood-smoked bacon for 2.</p>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Classic Burger</span>
+                            <span class="menu-item-price">$11.75</span>
+                            <p class="menu-item-desc">1/3 beef patty with cheddar cheese, lettuce, tomato, pickles & house sauce. Add applewood-smoked bacon or avocado for 2.</p>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Grilled Veggie</span>
+                            <span class="menu-item-price">$10.75</span>
+                            <p class="menu-item-desc">Grilled zucchini, roasted red bell pepper, goat cheese, baby lettuces, & red pepper mayo on focaccia bread.</p>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Fresh Veggie Sandwich</span>
+                            <span class="menu-item-price">$13</span>
+                            <p class="menu-item-desc">Avocado, cucumber, tomato, onion, sprouts & provolone cheese on whole wheat.</p>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Baja Fish Tacos</span>
+                            <span class="menu-item-price">$13</span>
+                            <p class="menu-item-desc">2 tacos, fresh fish of the day, cabbage, avocado, salsa, & baja sauce. Served with a side of black beans.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sunday Brunch Pane -->
+                <div class="menu-category-pane" id="brunch">
+                    <div class="menu-category-header">
+                        <h3>Sunday Brunch</h3>
+                        <p>But first, Brunch. Served Sundays with love.</p>
+                    </div>
+                    
+                    <div class="menu-table">
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Roasted Tomato Benedict</span>
+                            <span class="menu-item-price">$13.75</span>
+                            <p class="menu-item-desc">Sourdough round, roasted tomato, poached egg, crumbled bacon, & hollandaise.</p>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">French Toast Monte Cristo</span>
+                            <span class="menu-item-price">$12.75</span>
+                            <p class="menu-item-desc">Turkey, bacon, swiss cheese, & apple grilled in french toast; served with a side of black pepper honey sauce.</p>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Swedish Pancakes</span>
+                            <span class="menu-item-price">$14</span>
+                            <p class="menu-item-desc">3 berry-filled and rolled pancakes served with pure maple syrup.</p>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Southern Fried Chicken and Waffles</span>
+                            <span class="menu-item-price">$14</span>
+                            <p class="menu-item-desc">Buttermilk fried chicken breast & Belgian waffle. Served with pure maple syrup & black pepper gravy.</p>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Sweet Potato Hash</span>
+                            <span class="menu-item-price">$12</span>
+                            <p class="menu-item-desc">Sweet potatoes and beef brisket with 2 poached eggs on top.</p>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Biscuits & Chicken Gravy</span>
+                            <span class="menu-item-price">$11</span>
+                            <p class="menu-item-desc">Fresh housemade biscuits, shredded chicken, leeks, peas, & creamy gravy.</p>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Biscuits & Sausage Gravy</span>
+                            <span class="menu-item-price">$11</span>
+                            <p class="menu-item-desc">Freshly baked biscuits with country pork sausage gravy.</p>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Mexican Scramble</span>
+                            <span class="menu-item-price">$9</span>
+                            <p class="menu-item-desc">3 eggs, fried corn tortillas, onions, tomatoes cheddar & cotija cheeses, served with a side of black beans, fire roasted salsa & tortillas.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drinks Pane -->
+                <div class="menu-category-pane" id="drinks">
+                    <div class="menu-category-header">
+                        <h3>Wine, Beer & Beverages</h3>
+                        <p>A curated selection to complement your meal</p>
+                    </div>
+                    
+                    <div class="menu-table">
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Wine Selection</span>
+                            <span class="menu-item-price">$7 / $20</span>
+                            <p class="menu-item-desc">Ask about our wine selection!</p>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">NV Mas Fi Cava Brut</span>
+                            <span class="menu-item-price">$7</span>
+                            <p class="menu-item-desc">Spain</p>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Mimosa</span>
+                            <span class="menu-item-price">$7</span>
+                            <p class="menu-item-desc">Fresh squeezed orange juice and Cava Brut</p>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">12 oz Beer</span>
+                            <span class="menu-item-price">$4.75</span>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">16 oz Beer</span>
+                            <span class="menu-item-price">$6.5</span>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Coffee</span>
+                            <span class="menu-item-price">$2.75</span>
+                            <p class="menu-item-desc">Mariposa Roasting Company special wild fig kitchen roast</p>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Double Espresso</span>
+                            <span class="menu-item-price">$2.5</span>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Cappuccino or Latte</span>
+                            <span class="menu-item-price">$3.75</span>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Mocha</span>
+                            <span class="menu-item-price">$4</span>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Numi Organic Tea</span>
+                            <span class="menu-item-price">$2.5</span>
+                            <p class="menu-item-desc">Jasmine green, english breakfast, camomile, mint</p>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Fresh Orange Juice- 8oz</span>
+                            <span class="menu-item-price">$4</span>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Martinelli's Apple Juice</span>
+                            <span class="menu-item-price">$3</span>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Iced Tea</span>
+                            <span class="menu-item-price">$2.75</span>
+                        </div>
+                        <div class="menu-item-row">
+                            <span class="menu-item-name">Soda</span>
+                            <span class="menu-item-price">$2.75</span>
+                            <p class="menu-item-desc">Assorted</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section gallery bg-alt" id="gallery">
+        <div class="container">
+            <h2 class="section-title text-center fade-in">Culinary Art</h2>
+            <div class="gallery-slider-wrapper fade-in delay-1">
+                <button class="slider-arrow prev" aria-label="Previous image">&lt;</button>
+                <div class="gallery-slider">
+                    <div class="slider-track">
+                        <div class="gallery-item active"><img src="./assets/exterior.webp" alt="Restaurant Exterior" data-full="./assets/exterior.webp"></div>
+                        <div class="gallery-item"><img src="./assets/owner.webp" alt="Friendly Staff" data-full="./assets/owner.webp"></div>
+                        <div class="gallery-item"><img src="./assets/menu/monte-cristo.webp" alt="Monte Cristo close-up" data-full="./assets/menu/monte-cristo.webp"></div>
+                        <div class="gallery-item"><img src="./assets/gallery/IMG-1400.webp" alt="Restaurant Atmosphere" data-full="./assets/gallery/IMG-1400.webp"></div>
+                        <div class="gallery-item"><img src="./assets/gallery/IMG-2276.webp" alt="Delicious Food" data-full="./assets/gallery/IMG-2276.webp"></div>
+                        <div class="gallery-item"><img src="./assets/gallery/IMG-2366.webp" alt="Interior Details" data-full="./assets/gallery/IMG-2366.webp"></div>
+                        <div class="gallery-item"><img src="./assets/gallery/IMG-3327.webp" alt="Chef's Special" data-full="./assets/gallery/IMG-3327.webp"></div>
+                        <div class="gallery-item"><img src="./assets/gallery/IMG-4228.webp" alt="Cozy Seating" data-full="./assets/gallery/IMG-4228.webp"></div>
+                        <div class="gallery-item"><img src="./assets/gallery/IMG-4269.webp" alt="Fresh Ingredients" data-full="./assets/gallery/IMG-4269.webp"></div>
+                        <div class="gallery-item"><img src="./assets/gallery/IMG-4350.webp" alt="Bistro Vibe" data-full="./assets/gallery/IMG-4350.webp"></div>
+                        <div class="gallery-item"><img src="./assets/gallery/IMG-5346.webp" alt="Gourmet Dish" data-full="./assets/gallery/IMG-5346.webp"></div>
+                        <div class="gallery-item"><img src="./assets/gallery/IMG-5352.webp" alt="Fine Dining" data-full="./assets/gallery/IMG-5352.webp"></div>
+                        <div class="gallery-item"><img src="./assets/gallery/IMG-5375.webp" alt="Warm Hospitality" data-full="./assets/gallery/IMG-5375.webp"></div>
+                        <div class="gallery-item"><img src="./assets/gallery/IMG-7454.webp" alt="Artisan Bread" data-full="./assets/gallery/IMG-7454.webp"></div>
+                        <div class="gallery-item"><img src="./assets/gallery/IMG-7915.webp" alt="Restaurant Interior" data-full="./assets/gallery/IMG-7915.webp"></div>
+                        <div class="gallery-item"><img src="./assets/gallery/IMG-9343.webp" alt="Signature Coffee" data-full="./assets/gallery/IMG-9343.webp"></div>
+                        <div class="gallery-item"><img src="./assets/gallery/IMG_3672.webp" alt="Sweet Treats" data-full="./assets/gallery/IMG_3672.webp"></div>
+                        <div class="gallery-item"><img src="./assets/menu/wild-fig-salad.webp" alt="Healthy Salads" data-full="./assets/menu/wild-fig-salad.webp"></div>
+                        <div class="gallery-item"><img src="./assets/menu/baked-goods.webp" alt="Fresh Baked Cakes" data-full="./assets/menu/baked-goods.webp"></div>
+                    </div>
+                </div>
+                <button class="slider-arrow next" aria-label="Next image">&gt;</button>
+                
+                <div class="slider-counter">
+                    <span id="current-slide">1</span> / <span id="total-slides">19</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+        <img class="lightbox-img" id="lightbox-img" src="" alt="Enlarged gallery image">
+    </div>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container contact-grid">
+            <div class="contact-form-column fade-in">
+                <span class="section-subtitle">Reservations</span>
+                <h2 class="section-title">Book a Table</h2>
+                <form id="booking-form" class="booking-form" action="https://formsubmit.co/thewildfigkitchen@gmail.com" method="POST">
+                    <!-- FormSubmit Configuration -->
+                    <input type="hidden" name="_subject" value="New Table Reservation - Wild Fig Kitchen">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="Full Name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="_replyto" placeholder="john@example.com" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Date</label>
+                            <input type="date" id="date" name="Date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Time</label>
+                            <input type="time" id="time" name="Time" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Guests</label>
+                            <select id="guests" name="Guests" required>
+                                <option value="1">1 Person</option>
+                                <option value="2" selected>2 People</option>
+                                <option value="3">3 People</option>
+                                <option value="4">4 People</option>
+                                <option value="5+">5+ People</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Special Requests</label>
+                        <textarea id="message" name="Special Requests" rows="3"
+                            placeholder="Any dietary requirements or special occasions?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Confirm Reservation</button>
+                    <input type="hidden" name="_next" value="https://wildfigkitchen.com/thanks.html">
+                </form>
+            </div>
+
+            <div class="contact-info-column fade-in delay-2">
+                <div class="info-card">
+                    <h3 class="info-title">Contact Information</h3>
+
+                    <div class="info-body-grid">
+                        <div class="info-column">
+                            <div class="info-item">
+                                <span class="info-label"><i class="fa-solid fa-location-dot"></i> Location</span>
+                                <p>35300 CA-41<br>Coarsegold, CA 93614<br><small>Coarsegold Historic Village</small></p>
+                            </div>
+
+                            <div class="info-item">
+                                <span class="info-label"><i class="fa-solid fa-paper-plane"></i> Say Hello</span>
+                                <p><a href="mailto:thewildfigkitchen@gmail.com" class="email-link">thewildfigkitchen@gmail.com</a><br>
+                                    <a href="tel:+15596583447" class="phone-btn">+1 559-658-3447</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="info-column">
+                            <div class="info-item">
+                                <span class="info-label"><i class="fa-solid fa-clock"></i> Opening Hours</span>
+                                <div class="hours-grid">
+                                    <span>Mon - Tue</span>
+                                    <span>Closed</span>
+                                    <span>Wed - Sat</span>
+                                    <span>8:00 AM - 2:30 PM</span>
+                                    <span>Sunday</span>
+                                    <span>9:00 AM - 2:30 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <img src="./assets/brand/logo.png" alt="Wild Fig Kitchen Logo" class="footer-logo" loading="lazy">
+                <p>Premium dining experience blending rustic charm with modern culinary innovation.</p>
+            </div>
+
+            <div class="footer-links-group">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#restaurant">Restaurant</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+
+
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/wildfigkitchen/" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/wildfigkitchen/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.yelp.com/biz/wild-fig-kitchen-coarsegold-5" target="_blank" aria-label="Yelp"><i class="fa-brands fa-yelp"></i></a>
+                </div>
+            </div>
+        </div>
+    <div class="footer-bottom container">
+        <p>&copy; <span id="current-year"></span> Wild Fig Kitchen. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="script.js"></script>
+</body>
+</html>

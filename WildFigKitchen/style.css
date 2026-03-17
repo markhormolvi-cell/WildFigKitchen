@@ -1347,6 +1347,23 @@ body.nav-open {
     .section {
         padding: 5rem 0;
     }
+
+    .menu-item-row {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "name"
+            "price"
+            "desc";
+        gap: 0.5rem;
+    }
+
+    .menu-item-name::after {
+        display: none;
+    }
+
+    .menu-item-price {
+        text-align: left;
+    }
 }
 
 @media (max-width: 480px) {

@@ -1380,6 +1380,16 @@ body.nav-open {
 }
 
 @media (max-width: 480px) {
+    .nav-container {
+        padding: 0 0.75rem !important;
+    }
+
+    .menu-category-header h3 {
+        font-size: 1.3rem !important;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
     .hero-title {
         font-size: 2.8rem;
     }

@@ -1308,7 +1308,7 @@ body.nav-open {
 
 @media (max-width: 768px) {
     .nav-container {
-        padding: 0 1rem;
+        padding: 0 1rem !important;
     }
 
     .nav-links {

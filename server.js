@@ -18,6 +18,7 @@ http.createServer((req, res) => {
         '.gif': 'image/gif',
         '.svg': 'image/svg+xml',
         '.jfif': 'image/jpeg',
+        '.webp': 'image/webp',
     };
 
     let contentType = mimeTypes[extname] || 'application/octet-stream';

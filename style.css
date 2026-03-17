@@ -347,7 +347,7 @@ img {
 .mobile-links a {
     font-family: var(--font-heading);
     font-size: 2.5rem;
-    color: var(--clr-secondary);
+    color: white;
 }
 
 /* Mobile Nav Open State */
@@ -1307,6 +1307,10 @@ body.nav-open {
 }
 
 @media (max-width: 768px) {
+    .nav-container {
+        padding: 0 1rem !important;
+    }
+
     .nav-links {
         display: none;
     }
@@ -1348,6 +1352,16 @@ body.nav-open {
         padding: 5rem 0;
     }
 
+    .menu-category-header h3 {
+        font-size: 1.3rem !important;
+        letter-spacing: 0.1em;
+        word-break: break-word;
+    }
+
+    .menu-category-pane {
+        padding: 3rem 1.5rem;
+    }
+
     .menu-item-row {
         grid-template-columns: 1fr;
         grid-template-areas: 
@@ -1367,6 +1381,18 @@ body.nav-open {
 }
 
 @media (max-width: 480px) {
+    .nav-container {
+        padding: 0 0.75rem !important;
+    }
+
+    .menu-category-header h3 {
+        font-size: 1rem !important;
+        line-height: 1.2;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        max-width: 100%;
+    }
+
     .hero-title {
         font-size: 2.8rem;
     }
